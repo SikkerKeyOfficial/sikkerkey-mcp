@@ -112,15 +112,7 @@ internal/
   whoami/ revoke/  local agent-slot management
   identity/        on-disk keypair storage + request signing
   api/ config/     SikkerKey API client and per-client config blocks
-npm/               npm packaging: a thin launcher plus one package per platform
-  bin/             Node launcher that selects the right platform binary
-  <platform>/      per-platform package manifest (binary added at build time)
-  publish.sh       cross-compiles every platform and publishes to npm
 ```
-
-### Publishing
-
-`npm/publish.sh` is the release path: it bumps the version, cross-compiles the five platform binaries, and publishes the platform packages followed by the main `sikkerkey-mcp` package. Pushing source to GitHub is handled by `push.sh`.
 
 ## Documentation
 
