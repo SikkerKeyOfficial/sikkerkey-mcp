@@ -1,5 +1,7 @@
 # SikkerKey MCP
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/SikkerKeyOfficial/sikkerkey-mcp.svg)](https://pkg.go.dev/github.com/SikkerKeyOfficial/sikkerkey-mcp) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)](go.mod)
+
 The official [Model Context Protocol](https://modelcontextprotocol.io) server for [SikkerKey](https://sikkerkey.com). Manage your vault from Claude Code, Codex, Cursor, and other MCP-compatible AI clients, without ever giving the AI access to plaintext secret values.
 
 The server runs locally as a child process of your AI client, authenticates to SikkerKey on every call with an Ed25519 signed request, and exposes management tools for projects, secrets, policies, canaries, machines, AI agents, audit, alerts, webhooks, and support. The agent's private key never leaves the machine, and no tool returns the plaintext content of a stored secret.
