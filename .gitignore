@@ -1,4 +1,3 @@
-# The push helper, the local build artifact, and npm packaging never get published.
 push.sh
 /sikkerkey-mcp
 /npm/
