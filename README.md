@@ -91,17 +91,6 @@ Any other MCP-over-stdio client also works. Point it at `sikkerkey-mcp serve` an
 | `SIKKERKEY_AGENT_ID` | Selects which local agent identity the server runs as. Required when more than one agent is registered on this host. |
 | `SIKKERKEY_HOME` | Override the identity root. Defaults to `~/.sikkerkey`. |
 
-## Build from source
-
-The published npm package ships prebuilt binaries, so most users never need to build. To build locally:
-
-```bash
-go build -o sikkerkey-mcp .
-./sikkerkey-mcp --help
-```
-
-Requires Go (see [`go.mod`](go.mod) for the minimum version). The server has no third-party runtime dependencies beyond the Go standard library.
-
 ### Repository layout
 
 ```
